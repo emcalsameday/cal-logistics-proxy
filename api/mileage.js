@@ -4,7 +4,7 @@ export default async function handler(req, res) {
   
   const { origins, destinations } = req.query;
   
-  const url = `https://maps.googleapis.com/maps/api/distancematrix/json?origins=${encodeURIComponent(origins)}&destinations=${encodeURIComponent(destinations)}&units=imperial&key=AIzaSyDLSqMaaRBH2Ckixyrzuol04oNPibS4p7s`;
+  const url = `https://maps.googleapis.com/maps/api/distancematrix/json?origins=${encodeURIComponent(origins)}&destinations=${encodeURIComponent(destinations)}&units=imperial&key=AIzaSyBX0ukWhPJ2X53Hc7SYn-suMhzNVs7IvcU`;
   
   const response = await fetch(url);
   const data = await response.json();
